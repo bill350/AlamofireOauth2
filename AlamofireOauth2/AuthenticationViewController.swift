@@ -69,7 +69,7 @@ class AuthenticationViewController : UIViewController, UIWebViewDelegate{
     
     func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         
-        let url : NSString = request.URL!.absoluteString
+        let url : NSString = request.URL!.absoluteString!
         self.isRetrievingAuthCode = url.hasPrefix(self.oauth2Settings.redirectURL)
         
         if (self.isRetrievingAuthCode!) {
@@ -96,7 +96,7 @@ class AuthenticationViewController : UIViewController, UIWebViewDelegate{
             
     }
     
-    func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {
+    func webView(webView: UIWebView, didFailLoadWithError error: NSError) {
         if (!self.isRetrievingAuthCode!) {
             self.failureCallback!(error: error ?? NSError(domain: "Could not retreive auth code", code: 1, userInfo: nil))
         }

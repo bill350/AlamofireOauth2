@@ -139,12 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FD256D31B5707E600825BF1 /* Build configuration list for PBXNativeTarget "Oauth2Test" */;
 			buildPhases = (
-				D4917FAEF91B1A144672C79E /* 📦 Check Pods Manifest.lock */,
+				D4917FAEF91B1A144672C79E /* [CP] Check Pods Manifest.lock */,
 				7FD256B31B5707E500825BF1 /* Sources */,
 				7FD256B41B5707E500825BF1 /* Frameworks */,
 				7FD256B51B5707E500825BF1 /* Resources */,
-				47EEF877B27A9C2AEB55F21E /* 📦 Embed Pods Frameworks */,
-				1916432447245778B703B134 /* 📦 Copy Pods Resources */,
+				47EEF877B27A9C2AEB55F21E /* [CP] Embed Pods Frameworks */,
+				1916432447245778B703B134 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,6 +169,7 @@
 					7FD256B61B5707E500825BF1 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = JPC3M2UF4R;
+						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.SafariKeychain = {
 								enabled = 0;
@@ -209,14 +210,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1916432447245778B703B134 /* 📦 Copy Pods Resources */ = {
+		1916432447245778B703B134 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,14 +225,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Oauth2Test/Pods-Oauth2Test-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		47EEF877B27A9C2AEB55F21E /* 📦 Embed Pods Frameworks */ = {
+		47EEF877B27A9C2AEB55F21E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,14 +240,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Oauth2Test/Pods-Oauth2Test-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D4917FAEF91B1A144672C79E /* 📦 Check Pods Manifest.lock */ = {
+		D4917FAEF91B1A144672C79E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +393,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.evict.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -407,6 +409,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.evict.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};

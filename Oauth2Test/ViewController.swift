@@ -81,7 +81,7 @@ public enum WordPressRequestConvertible: URLRequestConvertible {
     
     public var URLRequest: NSMutableURLRequest { get {
         let URL = NSURL(string: WordPressRequestConvertible.baseURLString!)!
-        let mutableURLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent("/me"))
+        let mutableURLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent("/me")!)
         mutableURLRequest.HTTPMethod = "GET"
         
         if let token = WordPressRequestConvertible.OAuthToken {
@@ -119,7 +119,7 @@ public enum GoogleRequestConvertible: URLRequestConvertible {
     public var URLRequest: NSMutableURLRequest {
         get  {
             let URL = NSURL(string: GoogleRequestConvertible.baseURLString!)!
-            let mutableURLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent("/people/me"))
+            let mutableURLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent("/people/me")!)
             mutableURLRequest.HTTPMethod = "GET"
             
             if let token = GoogleRequestConvertible.OAuthToken {
